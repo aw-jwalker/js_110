@@ -1,0 +1,27 @@
+{
+  "name": "js_101",
+  "version": "1.0.0",
+  "description": "JS101 - JavaScript Basics coursework, excludes larger projects dedicated to their own repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aw-jwalker/js_101.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aw-jwalker/js_101/issues"
+  },
+  "homepage": "https://github.com/aw-jwalker/js_101#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.12.1",
+    "eslint-cli": "^1.1.1"
+  }
+}
