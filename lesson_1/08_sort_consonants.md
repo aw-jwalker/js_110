@@ -58,3 +58,39 @@ console.log(sortStringsByConsonants(list4));
 // ['month', 'day', 'week', 'year'] => each has one except month has two
 ```
 
+**OBSERVATIONS**
+
+- see comments next to each test case result
+- we care ***not*** about number of consonants
+- we care about number of consecutive, so its basically never 1, only 0 or 2+
+
+## Data Structures
+
+- the return is simply an array
+- for processing data, use 2d array, or maybe array of objects
+
+## Algorithm
+
+**OVERIVEW**
+   
+> - input: array of stirngs
+> - loop through array, take element, return array of element and num conec consonants
+> - push that value to processing array
+>    - note: check if this preserves input array order
+> - sort processing array by second element of each sub array
+> - return array of first element of each sub array
+
+**FUNCTIONS**
+
+> countMaxAdjacentConsonants(str)
+> - iterate through string
+> - if in consonants array && prev char in cons. array
+>   - consecutives = true
+>   - count_consec += 1
+> - else 
+>   - count_consec = 0
+
+
+
+
+
