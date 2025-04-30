@@ -37,16 +37,84 @@ console.log(getOnes());
   console.log(selectVowels('the quick brown fox').length);
 }
 
-// Select key-value pairs wher the value is 'fruit'
+{
+  // Select key-value pairs where the value is 'fruit'
+  /*
+   * Algorithm:
+   * iterate through keys
+   * check value of produce keys of i against 'fruit'
+   * if equal, add key-value pair to fruits object
+   * return fruits
+   */
 
-let produce = {
-  apple: 'Fruit',
-  carrot: 'Vegetable',
-  pear: 'Fruit',
-  broccoli: 'Vegetable'
-};
+  let produce = {
+    apple: 'Fruit',
+    carrot: 'Vegetable',
+    pear: 'Fruit',
+    broccoli: 'Vegetable'
+  };
 
-function selectFruit(obj) {
+  function selectFruit(obj) {
+    let fruits = {};
+    let produceKeys = Object.keys(produce);
+
+    for (let i = 0; i < produceKeys.length; i++) {
+      if (produce[produceKeys[i]] === 'Fruit') {
+        fruits[produceKeys[i]] = produce[produceKeys[i]];
+      }
+    }
+
+    return fruits;
+  }
+
+  console.log(selectFruit(produce)); // => { apple: 'Fruit', pear: 'Fruit' }
+
+}
+
+{
+  function doubleNumbers(numbers) {
+    let doubledNums = [];
+    let counter = 0;
+
+    while (counter < numbers.length) {
+      let currentNum = numbers[counter];
+      doubledNums.push(currentNum * 2);
+
+      counter++;
+    }
+
+    return doubledNums
+  }
+
+  console.log(doubleNumbers([1, 4, 3, 7, 2, 6]));
+
+  function doubleNums(numbers) {
+    let counter = 0;
+
+    while (counter < numbers.length) {
+      numbers[i] *= 2;
+      counter++;
+    }
+  }
 
 
-  selectFruit(produce); // => { apple: 'Fruit', pear: 'Fruit' }
+}
+
+{
+  function multNums(numbers, multiplier) {
+    let multipliedNums = [];
+    let counter = 0;
+
+    while (counter < numbers.length) {
+      let currentNum = numbers[counter];
+      multipliedNums.push(currentNum * multiplier);
+
+      counter++;
+    }
+
+    return multipliedNums
+  }
+
+  let numbers = [1, 4, 3, 7, 2, 6];
+  console.log(multNums(numbers, 4));
+}
