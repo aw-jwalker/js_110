@@ -118,3 +118,5 @@ console.log(getOnes());
   let numbers = [1, 4, 3, 7, 2, 6];
   console.log(multNums(numbers, 4));
 }
+
+
